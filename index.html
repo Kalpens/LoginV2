@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="./3rdpart/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <div id="main" style="position:relative;">
+
+
+<div class="login-page" style="display: none;">
+<div class="form">
+
+    <form class="register-form">
+        <input id="create-name" type="text" placeholder="name" />
+        <input id="create-pw" type="password" placeholder="password" />
+        <input id="create-email" type="text" placeholder="email address" />
+        <button id="create">create</button>
+        <p id="toogle-signin" class="message">Already registered? <a>Sign In</a></p>
+    </form>
+
+    <form class="login-form">
+        <input type="text" placeholder="username" id="name" />
+        <input type="password" placeholder="password" id="pw" />
+        <button id="logon">login</button>
+        <p id="toogle-create" class="message">Not registered? <a>Create an account</a></p>
+        <p class="message">forgot password? <a id="lostpasw">Forgot my password</a></p>
+    </form>
+
+</div>
+</div>
+
+
+<div class="loggedin-page" style="display: none;">
+<h1>Welcome to the page</h1>
+<h3>You have logged in</h3>
+<h3>List of users</h3>
+<ul id="userlist"></ul>
+<button id="logout" style="position:absolute; top:0; right:0;">LogOut</button>
+
+</div>
+</div>
+</body>
+
+</html>
